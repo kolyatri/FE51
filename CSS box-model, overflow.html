@@ -1,0 +1,195 @@
+<!-- 
+
+Завдання 1
+Створи блок розміром 300px x 150px, з жовтим фоном, 20px внутрішніми відступами (padding) та чорною рамкою товщиною 5px.
+
+Рішення:
+
+
+.box1 {
+  width: 300px;
+  height: 150px;
+  background-color: yellow;
+  padding: 20px;
+  border: 5px solid black;
+}
+Завдання 2
+Задай зовнішні відступи: зверху — 30px, справа — 50px, знизу — 10px, зліва — 0.
+
+Рішення:
+
+
+.box2 {
+  margin: 30px 50px 10px 0;
+}
+Завдання 3
+Створи два блоки однакової ширини — 200px, але в одному використай box-sizing: content-box, а в іншому — border-box. Додай padding: 20px і border: 5px.
+
+Рішення:
+
+
+.content {
+  width: 200px;
+  padding: 20px;
+  border: 5px solid gray;
+  box-sizing: content-box;
+  background: lightblue;
+  margin-bottom: 20px;
+}
+
+.border {
+  width: 200px;
+  padding: 20px;
+  border: 5px solid gray;
+  box-sizing: border-box;
+  background: lightgreen;
+}
+Результат: перший блок буде більший, ніж другий.
+
+Завдання 4
+Створи блок шириною 400px і висотою 100px. Встав у нього текст, який буде вищим за 100px. Забезпеч появу вертикального скролбара тільки коли це потрібно.
+
+Рішення:
+
+
+.scroll-box {
+  width: 400px;
+  height: 100px;
+  border: 1px solid #000;
+  overflow: auto;
+}
+
+<div class="scroll-box">
+  <p>
+    Дуже довгий текст, який займає декілька рядків. Дуже довгий текст, який займає декілька рядків. Дуже довгий текст, який займає декілька рядків. Дуже довгий текст, який займає декілька рядків.
+  </p>
+</div>
+Завдання 5
+Створи блок із наступними параметрами:
+
+width: 300px
+
+padding: 30px
+
+border: 10px
+
+box-sizing: border-box
+
+Запитання: яким буде реальний розмір блоку?
+
+Рішення:
+
+
+.box5 {
+  width: 300px;
+  padding: 30px;
+  border: 10px solid black;
+  box-sizing: border-box;
+}
+Фактична ширина: 300px (все вже всередині),
+внутрішня область контенту: 300 − 60 (padding) − 20 (border) = 220px
+
+Завдання 6
+Створи два блоки, між якими буде зовнішній відступ 50px. Один з них вирівняй по центру сторінки.
+
+Рішення:
+
+
+.centered {
+  width: 300px;
+  margin: 0 auto 50px auto;
+  background: lightgray;
+}
+
+.second {
+  width: 300px;
+  background: lightpink;
+}
+Завдання 7
+Установи overflow: hidden для блоку й встав у нього текст, який виходить за межі. Переконайся, що зайвий текст не видно.
+
+Рішення:
+
+
+.hidden-box {
+  width: 300px;
+  height: 50px;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+<div class="hidden-box">
+  Цей текст набагато довший, ніж дозволяє висота блоку, тому частина його буде обрізана.
+</div>
+
+Завдання 8
+Створи три блоки однакової висоти, розташовані один під одним. Установи їм однаковий margin-bottom, але переконайся, що суміжні відступи не зливаються (застосуй border або padding для переривання колапсу).
+
+Рішення:
+
+
+.block {
+  height: 100px;
+  margin-bottom: 20px;
+  padding: 1px; 
+  background-color: #eaeaea;
+}
+
+<div class="block"></div>
+<div class="block"></div>
+<div class="block"></div>
+Пояснення: додано padding — це перешкоджає колапсу margin між блоками.
+
+Завдання 9
+Створи блок з такими властивостями:
+
+ширина — 250px
+
+висота — 100px
+
+колір фону — сірий
+
+рамка зліва — червона, 10px
+
+padding — лише справа 20px
+
+відступ згори — 15px
+
+Рішення:
+
+
+.custom-box {
+  width: 250px;
+  height: 100px;
+  background-color: #ccc;
+  border-left: 10px solid red;
+  padding-right: 20px;
+  margin-top: 15px;
+}
+Завдання 10
+Створи два блоки з однаковим вмістом (однаковий текст), але задай їм однакову width, однаковий padding, але різні значення box-sizing, щоб чітко побачити різницю у внутрішній області для тексту.
+
+Рішення:
+
+
+.box-a,
+.box-b {
+  width: 300px;
+  padding: 20px;
+  border: 2px solid black;
+  margin-bottom: 20px;
+}
+
+.box-a {
+  box-sizing: content-box;
+  background-color: #ffe4e1;
+}
+
+.box-b {
+  box-sizing: border-box;
+  background-color: #e0ffff;
+}
+
+<div class="box-a">Box A — content-box: менше місця для тексту.</div>
+<div class="box-b">Box B — border-box: більше місця для тексту при тій же ширині.</div>
+Пояснення: у .box-a padding+border розширюють елемент, у .box-b — входять у 300px. -->
