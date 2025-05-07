@@ -1,0 +1,108 @@
+<!-- <style>
+  .button {
+    /* display: inline-block; */
+    width: 100px;
+    padding: 10px 20px;
+    background-color: lightblue;
+  }
+</style>
+
+<div>Це перший блок</div>
+<div>Це другий блок</div>
+<p>Це <span>рядковий</span> елемент у тексті.</p>
+
+<a href="#" class="button">Кнопка</a>
+
+<div style="display: block; background: lightblue; width: 300px">
+  Це блоковий елемент
+</div>
+
+<span style="display: inline; background: yellow"> Inline текст </span> -->
+
+<!-- Завдання 1. Визнач тип елемента
+Створи HTML-документ із такими елементами: div, span, p, a, h1, img.
+Для кожного елемента напиши, чи він блочний чи рядковий за замовчуванням.
+
+Рішення (коментарі):
+
+
+<div>Це блоковий (block)</div>
+<span>Це рядковий (inline)</span>
+<p>Це блоковий (block)</p>
+<a href="#">Це рядковий (inline)</a>
+<h1>Це блоковий (block)</h1>
+<img src="image.jpg" alt="..." /> <!-- inline-block -->
+
+Завдання 2. Спробуй задати ширину рядковому елементу Створи span, задай йому
+width: 300px, background-color і побач, чи розмір працює. Рішення:
+
+<span class="test-span">Це span</span>
+
+.test-span { display: inline; width: 300px; background-color: lightblue; }
+Результат: ширина не застосовується. Коментар: inline не приймає width. Завдання
+3. Перевір, як працює inline-block Змініть попередній приклад — замість display:
+inline задай inline-block. Додай також height і text-align: center. Рішення:
+.test-span { display: inline-block; width: 300px; height: 100px;
+background-color: lightblue; text-align: center; line-height: 100px; }
+Результат: працює як блок, але залишається в рядку. Завдання 4. Порівняй
+поведінку block і inline Створи 2 div: один із display: block, другий із
+display: inline. Додай обидва у HTML і перевір, чи вони розташовуються в рядок
+чи один під одним. Рішення:
+
+<div class="box1">Блоковий</div>
+<div class="box2">Інлайновий</div>
+
+.box1 { display: block; width: 200px; background: orange; } .box2 { display:
+inline; width: 200px; background: green; } Результат: другий блок ігнорує width
+і зливається з попереднім у рядку. Завдання 5. Приховай елемент Створи елемент,
+який не буде видно на сторінці. Використай display: none, а також додатково
+visibility: hidden для порівняння. Рішення:
+
+<div class="hide-me">Прихований блок</div>
+<div class="invisible">Невидимий, але займає місце</div>
+
+.hide-me { display: none; } .invisible { visibility: hidden; } Результат:
+.hide-me не видно і не займає місця. .invisible не видно, але займає простір у
+макеті. Завдання 6. Зроби горизонтальне меню з інлайнових блоків Створи 3
+a-елементи, які виглядають як кнопки і розташовані в один рядок з допомогою
+inline-block. Рішення:
+
+<a class="btn" href="#">Головна</a>
+<a class="btn" href="#">Про нас</a>
+<a class="btn" href="#">Контакти</a>
+
+.btn { display: inline-block; padding: 10px 20px; background-color: steelblue;
+color: white; text-decoration: none; margin-right: 10px; } Завдання 7. Зроби три
+div, які розташовуються в один рядок без використання Flexbox або Grid Умова:
+Розмісти три прямокутники (шириною по 100px), які стоятимуть поряд один з одним
+у рядок, використовуючи лише display. Рішення:
+
+<div class="row-box">1</div>
+<div class="row-box">2</div>
+<div class="row-box">3</div>
+
+.row-box { display: inline-block; width: 100px; height: 100px; background-color:
+coral; margin-right: 10px; text-align: center; line-height: 100px; } Завдання 8.
+Приховай елемент лише тимчасово без видалення з DOM Умова: Приховай елемент
+візуально, але щоб він продовжував займати місце. Рішення:
+
+<p class="invisible-text">Цей текст невидимий, але займає місце</p>
+
+.invisible-text { visibility: hidden; } Пояснення: visibility: hidden робить
+елемент невидимим, але він залишається в макеті (на відміну від display: none).
+Завдання 9. Перетвори рядковий елемент на блочний Умова: Є span, який потрібно
+перетворити на блочний, щоб задати йому width, height, margin-top. Рішення:
+
+<span class="block-span">Блоковий span</span>
+
+.block-span { display: block; width: 200px; height: 80px; background-color:
+lightseagreen; margin-top: 20px; } Завдання 10. Створи кнопку з a, яка
+поводиться як блочний елемент в рядку Умова: Зроби посилання-кнопку, яка має
+padding, width, і стоїть в рядку з іншими подібними елементами. Рішення:
+
+<a class="btn-link" href="#">Кнопка</a>
+<a class="btn-link" href="#">Ще кнопка</a>
+
+.btn-link { display: inline-block; padding: 10px 15px; width: 120px; background:
+darkorange; color: white; text-align: center; text-decoration: none;
+margin-right: 10px; } -->

@@ -1,0 +1,368 @@
+<!-- <style>
+   .box {
+    position: static;
+    top: 50px;
+  } 
+
+   .relative-box {
+    position: relative;
+    top: 20px; 
+    left: 30px; 
+  }
+  .wrapper {
+    position: relative;
+    height: 100px;
+    background-color: red;
+
+  }
+
+  .wrapper1 {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    left: 20px;
+    top: 20px;
+  }
+
+  .absolute-box {
+    z-index: 0;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: green;
+  }
+
+  .fixed-banner {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: black;
+    color: white;
+    padding: 10px;
+  }
+
+  .sticky-header {
+    display: inline-block;
+    position: sticky;
+    top: 30px;
+    background: white;
+    padding: 10px;
+    z-index: 100;
+  }
+
+  .box1 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 150px;
+    height: 150px;
+    background: lightblue;
+    z-index: 1;
+  }
+
+  .box2 {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 150px;
+    height: 150px;
+    background: tomato;
+    z-index: 2;
+  } 
+</style> -->
+
+<!-- <div class="box">BOX</div> -->
+<!-- <span>1</span>
+<span class="relative-box">Привіт</span>
+<span>2</span>
+
+<div class="box1">1</div>
+<div class="box2">2</div>
+
+<br />
+<br />
+<br />
+<br />
+<div class="wrapper1">WRAPPER1</div>
+<div class="wrapper">
+  <div class="absolute-box">Я над контентом</div>
+</div>
+<div class="fixed-banner">Фіксований банер</div>
+<div class="wrapper">
+  <div class="absolute-box">Я над контентом</div>
+</div>
+<header class="sticky-header"><h1>Заголовок</h1></header>
+<div class="wrapper">
+  <div class="absolute-box">Я над контентом</div>
+</div>
+<div class="wrapper">
+  <div class="absolute-box">Я над контентом</div>
+</div>
+<div class="wrapper">
+  <div class="absolute-box">Я над контентом</div>
+</div>
+<div class="wrapper">
+  <div class="absolute-box">Я над контентом</div>
+</div>
+<div class="wrapper">
+  <div class="absolute-box">Я над контентом</div>
+</div> -->
+
+<!-- Завдання 1. Змісти елемент на 50px вниз і 30px праворуч від його звичайного положення
+Умова:
+Створи елемент, який залишатиметься в потоці, але буде зсунутий вниз і праворуч.
+
+HTML:
+
+
+<div class="box">Зміщений блок</div>
+CSS:
+
+
+.box {
+  position: relative;
+  top: 50px;
+  left: 30px;
+  background: lightblue;
+  padding: 20px;
+}
+Пояснення:
+relative дозволяє зсунути елемент візуально, але залишити його в потоці документа.
+
+Завдання 2. Виведи повідомлення в правому нижньому куті вікна браузера
+Умова:
+Блок має бути незалежним від прокрутки.
+
+HTML:
+
+
+<div class="notice">Важливе повідомлення</div>
+CSS:
+
+.notice {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: tomato;
+  color: white;
+  padding: 15px;
+}
+Пояснення:
+fixed прикріплює блок до вікна, незалежно від прокрутки сторінки.
+
+Завдання 3. Розмісти елемент у верхньому правому куті його батьківського блоку
+HTML:
+
+
+<div class="parent">
+  <div class="child">Права верхня позиція</div>
+</div>
+CSS:
+
+
+.parent {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background: #eee;
+}
+
+.child {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: teal;
+  color: white;
+  padding: 10px;
+}
+Пояснення:
+Батько має relative, тому absolute-елемент позиціонується всередині нього.
+
+Завдання 4. Зроби блок, який "прилипає" до верхнього краю сторінки при прокрутці
+HTML:
+
+
+<header class="sticky-header">Заголовок сайту</header>
+CSS:
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  z-index: 100;
+}
+Пояснення:
+sticky — це проміжне положення між relative і fixed, яке активується при скролі.
+
+Завдання 5. Перекрий один блок іншим за допомогою z-index
+HTML:
+
+
+<div class="box1">1</div>
+<div class="box2">2</div>
+CSS:
+
+
+.box1, .box2 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+.box1 {
+  background: lightblue;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+}
+
+.box2 {
+  background: coral;
+  top: 70px;
+  left: 70px;
+  z-index: 2;
+}
+Пояснення:
+Хоч блоки перекриваються, box2 з більшим z-index опиняється зверху.
+
+Завдання 6. Створи блок, який розташовується під усіма іншими
+HTML:
+
+
+<div class="back-layer">Фон</div>
+CSS:
+
+
+.back-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: lightgray;
+}
+Пояснення:
+z-index: -1 опускає блок під усіма іншими.
+
+Завдання 7. Позиціонуй елемент по центру контейнера
+Умова:
+За допомогою position та transform розмісти елемент точно по центру батьківського блоку.
+
+HTML:
+
+
+<div class="wrapper">
+  <div class="centered">Центр</div>
+</div>
+CSS:
+
+.wrapper {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  background: #ddd;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: darkgreen;
+  color: white;
+  padding: 10px 20px;
+}
+Пояснення:
+Зміщення на 50% та transform: translate() забезпечують точне центрування.
+
+Завдання 8. Відображай підказку над елементом при наведенні
+Умова:
+Створи tooltip, який з’являється над елементом по hover.
+
+HTML:
+
+
+<div class="tooltip-wrapper">
+  Наведи на мене
+  <div class="tooltip">Підказка</div>
+</div>
+CSS:
+
+
+.tooltip-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  background: black;
+  color: white;
+  padding: 5px 10px;
+  white-space: nowrap;
+  display: none;
+}
+
+.tooltip-wrapper:hover .tooltip {
+  display: block;
+}
+Пояснення:
+position: absolute дозволяє з’явитися над елементом. display: none/block керує появою.
+
+Завдання 9. Створи header, який залишається поверх інших блоків при прокрутці
+HTML:
+
+
+<header class="fixed-header">Мій сайт</header>
+<main>
+  <p>Довгий текст або контент…</p>
+</main>
+CSS:
+
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: navy;
+  color: white;
+  padding: 15px;
+  z-index: 1000;
+}
+Пояснення:
+fixed + z-index забезпечують фіксацію зверху незалежно від контенту сторінки.
+
+Завдання 10. Створи два вкладені блоки: один relative, другий — absolute, і поясни їх положення
+HTML:
+
+
+<div class="outer">
+  <div class="inner">Я у правому нижньому куті outer</div>
+</div>
+CSS:
+
+
+.outer {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background: #eee;
+}
+
+.inner {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #444;
+  color: white;
+  padding: 10px;
+}
+Пояснення:
+absolute розраховується відносно найближчого relative-батька, тобто .outer. -->
