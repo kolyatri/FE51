@@ -1,0 +1,484 @@
+<!-- <form action="/send.php" method="post">
+  <input type="text" name="username" />
+  <button type="submit">Надіслати</button>
+</form> -->
+
+<!-- <form action="/search" method="get">
+  <input type="text" name="q" placeholder="Пошук..." />
+  <button type="submit">Знайти</button>
+</form> -->
+
+<!-- <form action="/register" method="post" autocomplete="off">
+  <input type="email" name="email" required />
+  <input type="password" name="password" required />
+  <label
+    >Ваше ім’я:
+    <input type="text" name="name" placeholder="Іван" disabled />
+  </label>
+  <label
+    >Пароль:
+    <input type="password" name="pass" required />
+  </label>
+  <label>
+    <input type="checkbox" name="agree" checked />
+    Я погоджуюсь з умовами
+  </label>
+  <p>Оберіть стать:</p>
+  <label>
+    <input type="radio" name="gender" value="male" checked /> Чоловік
+  </label>
+  <label> <input type="radio" name="gender" value="female" /> Жінка </label>
+
+  <button type="submit">Зареєструватися</button>
+</form> -->
+
+<!-- <form>
+  <input type="text" name="username" placeholder="Ваше ім’я" required />
+  <input type="email" name="email" placeholder="Email" required />
+  <input type="password" name="pass" placeholder="Пароль" />
+
+  <label><input type="checkbox" name="agree" required /> Погоджуюсь</label>
+
+  <label><input type="radio" name="choice" value="1" /> Варіант 1</label>
+  <label><input type="radio" name="choice" value="2" /> Варіант 2</label>
+  <label for="user">Ім’я:</label>
+  <input type="text" id="user" name="username" />
+
+  <label for="msg">Ваше повідомлення:</label>
+  <textarea id="msg" name="message" rows="4" cols="40">
+lksjdflgdjflkgdlkfg</textarea
+  >
+  <label for="country">Оберіть країну:</label>
+  <select name="country" id="country">
+    <option value="ua">Україна</option>
+    <option value="pl" selected>Польща</option>
+    <option value="de">Німеччина</option>
+  </select>
+  <button type="reset">Reset</button>
+
+  
+
+  <input type="submit" value="Надіслати" />
+</form> -->
+
+<!-- <form action="/send" method="post">
+  <fieldset>d
+    <legend>Зворотній зв'язок</legend>
+
+    <label for="name">Ім’я:</label><br />
+    <input
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Введіть ім’я"
+      required
+    /><br /><br />
+
+    <label for="email">Email:</label><br />
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="example@email.com"
+      required
+    /><br /><br />
+
+    <label for="msg">Повідомлення:</label><br />
+    <textarea id="msg" name="message" rows="5" required></textarea><br /><br />
+
+    <label>
+      <input type="checkbox" name="agree" required />
+      Я погоджуюсь з умовами </label
+    ><br /><br />
+
+    <button type="submit">Надіслати</button>
+  </fieldset>
+</form> -->
+
+<!-- Практичні завдання з відповідями
+Завдання 1. Створіть поле для введення імені з підписом та обов’язковим заповненням
+Очікуване:
+
+текстове поле
+
+підпис
+
+placeholder
+
+required
+
+Відповідь:
+
+
+<label for="name">Ім’я:</label>
+<input type="text" id="name" name="username" placeholder="Ваше ім’я" required>
+Завдання 2. Додайте email-поле з валідацією формату email
+Очікуване:
+
+тип email
+
+атрибут required
+
+підпис
+
+Відповідь:
+
+
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" placeholder="example@email.com" required>
+Завдання 3. Зробіть два радіо-кнопки для вибору статі
+Очікуване:
+
+однаковий name
+
+різні value
+
+підписи до кожного
+
+Відповідь:
+
+
+<p>Стать:</p>
+<label><input type="radio" name="gender" value="male" checked> Чоловіча</label>
+<label><input type="radio" name="gender" value="female"> Жіноча</label>
+Завдання 4. Створіть текстову область (багаторядкове поле) для введення повідомлення
+Очікуване:
+
+тег <textarea>
+
+підпис
+
+атрибут required
+
+Відповідь:
+
+
+<label for="message">Повідомлення:</label><br>
+<textarea id="message" name="message" rows="5" required></textarea>
+Завдання 5. Додайте випадаючий список з вибором країни
+Очікуване:
+
+тег <select>
+
+три варіанти: Україна, Польща, Німеччина
+
+один із варіантів обраний за замовчуванням
+
+Відповідь:
+
+
+<label for="country">Країна:</label>
+<select name="country" id="country">
+  <option value="ua" selected>Україна</option>
+  <option value="pl">Польща</option>
+  <option value="de">Німеччина</option>
+</select>
+Завдання 6. Додайте чекбокс з підтвердженням згоди
+Очікуване:
+
+type="checkbox"
+
+обов’язковий (required)
+
+підпис
+
+Відповідь:
+
+
+<label>
+  <input type="checkbox" name="agree" required>
+  Я погоджуюсь з умовами
+</label>
+Завдання 7. Створіть кнопку відправлення форми
+Очікуване:
+
+кнопка, яка надсилає форму
+
+напис “Надіслати”
+
+Відповідь:
+
+
+<button type="submit">Надіслати</button>
+Завдання 8. Створіть базову форму з полями: ім’я, email, повідомлення, чекбокс згоди, кнопка
+Відповідь:
+
+
+<form action="/send" method="post">
+  <label>Ім’я:
+    <input type="text" name="name" required>
+  </label><br><br>
+
+  <label>Email:
+    <input type="email" name="email" required>
+  </label><br><br>
+
+  <label>Повідомлення:<br>
+    <textarea name="message" rows="4" required></textarea>
+  </label><br><br>
+
+  <label>
+    <input type="checkbox" name="agree" required>
+    Я погоджуюсь з умовами
+  </label><br><br>
+
+  <button type="submit">Надіслати</button>
+</form> -->
+
+<!-- <form>
+  <fieldset>
+    <legend>Зворотній зв’язок</legend>
+
+    <label for="name">Ім’я:</label>
+    <input type="text" id="name" name="name" required /><br /><br />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required /><br /><br />
+
+    <label for="msg">Повідомлення:</label><br />
+    <textarea id="msg" name="message" rows="5" required></textarea><br /><br />
+
+    <label>
+      <input type="checkbox" name="agree" required />
+      Я погоджуюсь з умовами </label
+    ><br /><br />
+
+    <button type="submit">Надіслати</button>
+  </fieldset>
+</form> -->
+
+<!-- <style>
+  .form-row {
+    margin-bottom: 15px;
+  }
+
+  .form-row label {
+    display: inline-block;
+    width: 120px;
+    font-weight: bold;
+  }
+
+  .form-row input {
+    width: 250px;
+    padding: 6px;
+  }
+
+  input:focus,
+  textarea:focus,
+  select:focus {
+    border-color: dodgerblue;
+    outline: none;
+    box-shadow: 0 0 3px rgba(30, 144, 255, 0.4);
+  }
+
+  button,
+  input[type='submit'] {
+    background: steelblue;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+
+  input:disabled {
+    background-color: #eee;
+    cursor: not-allowed;
+  }
+
+  form {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .form-actions {
+    text-align: center;
+  }
+</style>
+
+<form>
+  <div class="form-row">
+    <label for="name">Ім’я:</label>
+    <input type="text" id="name" name="name" placeholder="blablablablal" />
+  </div>
+  <div class="form-row">
+    <label for="name">Ім’я:</label>
+    <input type="text" id="name" name="name" disabled />
+  </div>
+  <div class="form-row">
+    <label for="name">Ім’я:</label>
+    <input type="text" id="name" name="name" />
+  </div>
+  <div class="form-actions">
+    <button type="submit">Надіслати</button>
+  </div>
+</form> -->
+<!-- <style>
+  .form-columns {
+    display: inline-block;
+    width: 50%;
+    font-size: 16px;
+  }
+
+  body {
+    font-size: 0;
+  }
+</style>
+
+<div class="form-columns">
+  <label>Ім’я: <input type="text" /></label>
+</div>
+<div class="form-columns">
+  <label>Email: <input type="email" /></label>
+</div> -->
+
+<!-- Практичні завдання з відповідями
+Завдання 1. Створи блок форми з підписом і полем, розташованими в один рядок. Підпис має бути шириною 120px.
+Відповідь:
+
+
+<div class="form-row">
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email">
+</div>
+
+.form-row label {
+  display: inline-block;
+  width: 120px;
+}
+
+.form-row input {
+  display: inline-block;
+  width: 250px;
+  padding: 6px;
+}
+Завдання 2. Зроби два поля, розміщених у два стовпчики (дві колонки) без використання Flex/Grid.
+Відповідь:
+
+
+<div class="column">
+  <label>Ім’я:
+    <input type="text">
+  </label>
+</div>
+
+<div class="column">
+  <label>Email:
+    <input type="email">
+  </label>
+</div>
+
+.column {
+  display: inline-block;
+  width: 48%;
+  vertical-align: top;
+  margin-right: 4%;
+}
+Завдання 3. Виділи поле при фокусі синьою рамкою та легким тіньовим підсвічуванням.
+Відповідь:
+
+
+input:focus,
+textarea:focus {
+  border-color: dodgerblue;
+  outline: none;
+  box-shadow: 0 0 3px rgba(30, 144, 255, 0.5);
+}
+Завдання 4. Стилізуй кнопку відправки так, щоб вона мала синій фон, білий текст, закруглені кути і ефект при наведенні.
+Відповідь:
+
+
+<button type="submit">Надіслати</button>
+
+button {
+  background: steelblue;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: darkblue;
+}
+Завдання 5. Центруй всю форму горизонтально в середині сторінки. Ширина форми — 400px.
+Відповідь:
+
+
+form {
+  width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+Завдання 6. Вирівняй кнопку праворуч у межах форми.
+Відповідь:
+
+
+<div class="form-actions">
+  <button type="submit">Надіслати</button>
+</div>
+
+.form-actions {
+  text-align: right;
+}
+Завдання 7. Стилізуй placeholder текст — зроби його сірим і курсивним.
+Відповідь:
+
+
+::placeholder {
+  color: #999;
+  font-style: italic;
+}
+Завдання 8. Зроби семантичне групування полів з назвою розділу “Контакти”.
+Відповідь:
+
+
+<fieldset>
+  <legend>Контакти</legend>
+
+  <label for="phone">Телефон:</label>
+  <input type="tel" id="phone" name="phone">
+</fieldset>
+Завдання 9. Створити форму з двома полями (email + повідомлення), кнопкою, і використати семантичні теги для доступності.
+Відповідь:
+
+
+<form>
+  <div class="form-row">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+
+  <div class="form-row">
+    <label for="msg">Повідомлення:</label>
+    <textarea id="msg" name="message" rows="4"></textarea>
+  </div>
+
+  <div class="form-actions">
+    <button type="submit">Надіслати</button>
+  </div>
+</form>
+Завдання 10. Стилізуй усі поля форми так, щоб вони мали однаковий вигляд: світло-сірий фон, внутрішній відступ, ширину 100%.
+Відповідь:
+
+
+input,
+textarea,
+select {
+  background: #f0f0f0;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  border-radius: 4px;
+} -->
