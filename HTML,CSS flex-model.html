@@ -1,0 +1,457 @@
+<!-- <style>
+  .flex-container {
+    display: flex;
+  }
+</style>
+<div class="flex-container">
+  <div>Блок 1</div>
+  <div>Блок 2</div>
+  <div>Блок 3</div>
+</div> -->
+
+<!-- <style>
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    border: 1px solid #ccc;
+    gap: 20px;
+    height: 100px;
+  }
+
+  .container div {
+    background: lightblue;
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .container .item1,
+  .item2,
+  .item3 {
+    flex-grow: 1;
+  }
+  .item1 {
+    order: 3;
+  }
+  .item2 {
+    order: 2;
+    /* flex-shrink: 0; */
+    align-self: center;
+    flex-basis: 200px;
+  }
+  .item3 {
+    order: 1;
+  }
+</style>
+
+<div class="container">
+  <div class="item1">Елемент 1 Елемент 1 Елемент 1</div>
+  <div class="item2">Елемент 2 Елемент 2 Елемент 2</div>
+  <div class="item3">Елемент 3 Елемент 3 Елемент 3</div>
+</div> -->
+
+<!-- <style>
+  .container {
+    display: flex;
+    gap: 20px;
+    height: 200px;
+  }
+
+  .item {
+    background: #ddd;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .item1 {
+    flex: 1;
+    order: 3;
+  }
+
+  .item2 {
+    flex: 2;
+    align-self: flex-start;
+  }
+
+  .item3 {
+    flex: 1;
+    order: 1;
+  }
+</style>
+
+<div class="container">
+  <div class="item item1">1</div>
+  <div class="item item2">2</div>
+  <div class="item item3">3</div>
+</div> -->
+
+<!-- <style>
+  .container {
+    display: flex;
+  }
+
+  .grow-example .fixed {
+    flex: 0 0 100px;
+  }
+
+  .grow-example .grow {
+    flex: 1;
+  }
+</style>
+
+<div class="container grow-example">
+  <div class="box fixed">A</div>
+  <div class="box grow">B</div>
+  <div class="box fixed">C</div>
+</div> -->
+<!-- <style>
+  .container {
+    display: flex;
+  }
+  .gap-test {
+    display: flex;
+    gap: 20px 10px; /* вертикальний, горизонтальний */
+  }
+</style>
+
+<div class="container gap-test">
+  <div class="box">A</div>
+  <div class="box">B</div>
+  <div class="box">C</div>
+</div> -->
+<!-- <style>
+  .nav {
+    display: flex; /* включає flex-контейнер */
+    justify-content: space-around; /* рівномірно розподіляє пункти */
+    align-items: center; /* вирівнює по вертикалі */
+    background-color: #333;
+    height: 60px;
+  }
+
+  .nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background 0.3s;
+  }
+
+  .nav a:hover {
+    background-color: #555;
+    border-radius: 4px;
+  }
+</style>
+
+<nav class="nav">
+  <a href="#">Головна</a>
+  <a href="#">Про нас</a>
+  <a href="#">Послуги</a>
+  <a href="#">Контакти</a>
+</nav> -->
+<!-- <style>
+  .nav {
+    display: flex;
+    background: #444;
+  }
+
+  .nav a {
+    flex: 1; /* кожен пункт займає однакову частину ширини */
+    text-align: center;
+    padding: 15px 0;
+    color: white;
+    text-decoration: none;
+    border-right: 1px solid #666;
+  }
+
+  .nav a:last-child {
+    border-right: none;
+  }
+
+  .nav a:hover {
+    background-color: #666;
+  }
+</style>
+<nav class="nav">
+  <a href="#">Головна</a>
+  <a href="#">Про нас</a>
+  <a href="#">Послуги</a>
+  <a href="#">Контакти</a>
+</nav> -->
+<!-- <style>
+  .card-container {
+    display: flex;
+    /* flex-wrap: wrap;  */
+    gap: 20px; /* рівномірні відстані між картками */
+    padding: 20px;
+    background: #f8f8f8;
+    justify-content: left;
+  }
+
+  .card {
+    flex-shrink: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+
+  }
+</style>
+<div class="card-container">
+  <div class="card">Картка 1</div>
+  <div class="card">Картка 2</div>
+  <div class="card">Картка 3</div>
+  <div class="card">Картка 4</div>
+</div> -->
+<!-- <style>
+  .banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    gap: 30px;
+  }
+
+  .banner-text {
+    flex: 1;
+  }
+
+  .banner-text h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .banner-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .banner-text button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: steelblue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .banner-image {
+    flex: 0 0 300px;
+  }
+
+  .banner-image img {
+    max-width: 100%;
+    border-radius: 6px;
+  }
+</style>
+
+<section class="banner">
+  <div class="banner-text">
+    <h2>Новий продукт</h2>
+    <p>Дізнайтесь більше про наш новий сервіс прямо зараз!</p>
+    <button>Детальніше</button>
+  </div>
+  <div class="banner-image">
+    <img src="https://via.placeholder.com/300x200" alt="Прев'ю" />
+  </div>
+</section> -->
+
+<!-- Завдання 1. Розташуйте три блоки в ряд з рівними відступами між ними
+(space-between) HTML: -->
+<!-- <style>
+  .container {
+    display: flex;
+    background: #eee;
+    padding: 20px;
+  }
+
+  .box {
+    background: steelblue;
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .space-between {
+    justify-content: space-between;
+  }
+</style>
+
+<div class="container space-between">
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>
+</div> -->
+
+<!-- Завдання 2. Розмістіть елементи у вертикальну колонку з центруванням по горизонталі
+
+.column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+} -->
+
+<!-- Завдання 3. Зробіть так, щоб один блок розтягувався, а інші мали фіксовану ширину
+
+<div class="container grow-example">
+  <div class="box fixed">A</div>
+  <div class="box grow">B</div>
+  <div class="box fixed">C</div>
+</div>
+
+
+.grow-example .fixed {
+  flex: 0 0 100px;
+}
+
+.grow-example .grow {
+  flex: 1;
+} -->
+
+<!-- Що потрібно реалізувати:
+•	Меню з пунктами в один ряд
+•	Вирівнювання пунктів по горизонталі
+•	Рівномірний розподіл простору
+•	Центрування по висоті
+•	Респонсивність (гнучке стиснення пунктів при зміні ширини вікна)
+ -->
+<!-- <style>
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    align-items: center;
+    background-color: #333;
+    height: 60px;
+  }
+
+  .nav a {
+    /* flex: 1; */
+    /* text-align: center; */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background 0.3s;
+  }
+
+  .nav a:hover {
+    background-color: #555;
+    border-radius: 4px;
+  }
+</style>
+<nav class="nav">
+  <a href="#">Головна</a>
+  <a href="#">Про нас</a>
+  <a href="#">Послуги</a>
+  <a href="#">Контакти</a>
+</nav> -->
+
+<!-- Завдання:
+•	Побудувати контейнер з двома блоками:
+o	Сайдбар шириною 200px
+o	Контент займає решту ширини
+•	Обидві колонки однакової висоти
+•	Контейнер має фоновий колір для візуалізації
+•	Всередині — простий текст або заголовки -->
+<!-- <style>
+  .layout {
+    display: flex;
+    flex-direction: row;
+    min-height: 300px; /* загальна висота */
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+  }
+
+  .sidebar {
+    flex: 0 0 200px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }
+
+  .content {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+  }
+</style>
+
+<div class="layout">
+  <aside class="sidebar">Сайдбар</aside>
+  <main class="content">Контент</main>
+</div> -->
+
+<!-- Завдання:
+•	Побудувати 3 (або більше) картки в одному рядку
+•	Картки мають однакову ширину
+•	Відстані між картками реалізуються через gap, без margin
+•	При зменшенні ширини — картки переносяться на новий рядок (flex-wrap)
+•	Контейнер має фоновий колір або padding для візуалізації -->
+<!-- <style>
+  .card-container {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap; /* дозволяє карткам переноситися */
+    gap: 20px; /* рівномірні відстані між картками */
+    padding: 20px;
+    background: #f8f8f8;
+  }
+
+  .card {
+    flex: 0 1 200px; /* дозволяє зменшуватись і збільшуватись, початкова ширина 200px */
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    min-width: 180px;
+  }
+</style>
+<div class="card-container">
+  <div class="card">Картка 1</div>
+  <div class="card">Картка 2</div>
+  <div class="card">Картка 3</div>
+  <div class="card">Картка 4</div>
+</div> -->
+
+<!-- <style>
+  .task3 {
+    display: flex;
+    gap: 15px;
+  }
+</style>
+
+<div class="task3">
+  <div class="box" style="flex: 1">Малий</div>
+  <div class="box" style="flex: 3">Великий</div>
+  <div class="box" style="flex: 1">Малий</div>
+</div> -->
+
+<style>
+  .task4 {
+    display: flex;
+    /* justify-content: space-around; */
+    background: #333;
+  }
+
+  .task4 a {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+  }
+</style>
+<nav class="task4">
+  <a href="#">Головна</a>
+  <a href="#">Послуги</a>
+  <a href="#">Контакти</a>
+</nav>
