@@ -1,0 +1,289 @@
+<!-- <!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Адаптивна верстка</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      main {
+        width: 100%;
+        padding: 10px;
+      }
+
+      @media (min-width: 600px) {
+        main {
+          width: 80%;
+          padding: 2vw;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        main {
+          width: 60%;
+          padding: 3vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Адаптивна верстка</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Розділ 1</h2>
+        <p>Цей блок змінює стилі в залежності від ширини екрана.</p>
+      </section>
+    </main>
+
+    <footer>&copy; 2025 Приклад сайту</footer>
+  </body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Демонстрація медіа-запитів</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+      }
+      .box {
+        background: #3498db;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      /* Медіа-запит для планшетів */
+      @media (min-width: 600px) {
+        .box {
+          background: #2ecc71;
+          font-size: 20px;
+        }
+      }
+      /* Медіа-запит для десктопів */
+      @media (min-width: 1024px) {
+        .box {
+          background: #e74c3c;
+          font-size: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">Привіт! Це тестова коробка</div>
+  </body>
+</html> -->
+
+<!-- Завдання 1. Мобільний заголовок
+Створи HTML-сторінку з заголовком <h1>Мій сайт</h1>.
+
+Задай базові стилі для заголовка (розмір шрифту 24px, колір — синій).
+
+Додай медіа-запити:
+
+Для планшетів : збільши шрифт до 32px, колір — зелений.
+
+Для десктопів : шрифт 40px, колір — червоний. -->
+
+<!-- <h1>Мій сайт</h1> -->
+
+<!-- <style>
+h1 {
+  font-size: 24px;
+  color: blue;
+}
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 32px;
+    color: green;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 40px;
+    color: red;
+  }
+} -->
+<!-- Завдання 2. Гнучкий блок з Flexbox
+Створи контейнер <div class="flex-container"> з 3 елементами всередині.
+
+Базові стилі: фон контейнера — світло-сірий, елементи — білий фон і padding 10px.
+
+Застосуй Flexbox:
+
+Базово — колонки .
+
+Для планшетів — вирівнюй елементи у рядок .
+
+Для десктопів — додай відстані між елементами ( 20px). -->
+<!-- <div class="flex-container">
+  <div>Елемент 1</div>
+  <div>Елемент 2</div>
+  <div>Елемент 3</div>
+</div>
+
+<style>
+.flex-container {
+  background: #eee;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.flex-container > div {
+  background: #fff;
+  padding: 10px;
+}
+
+@media (min-width: 600px) {
+  .flex-container {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .flex-container {
+    gap: 20px;
+  }
+}
+</style> -->
+
+<!-- Завдання 3. Адаптивна сітка з Grid
+Створи секцію <section class="grid-container"> з мінімум 4 елементами.
+
+Використай Grid Layout:
+
+Базово — один стовпчик ( 1fr).
+
+Для планшетів — дві колонки ( 1fr).
+
+Для десктопів — чотири колонки ( 1fr)).
+
+Додай gap: 10px. -->
+
+<!-- <section class="grid-container">
+  <div>Елемент 1</div>
+  <div>Елемент 2</div>
+  <div>Елемент 3</div>
+  <div>Елемент 4</div>
+</section>
+
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.grid-container > div {
+  background: #ddd;
+  padding: 10px;
+}
+
+@media (min-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+</style> -->
+
+<!-- 
+ Завдання 4. Відносні одиниці
+Для будь-якого блоку (.box) використовуй відносні одиниці:
+
+Ширину 80%
+
+Padding 2vw
+
+Шрифт 1.2rem
+
+
+<div class="box">Адаптивний блок</div>
+
+<style>
+.box {
+  width: 80%;
+  padding: 2vw;
+  font-size: 1.2rem;
+  background: #ccc;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+</style> -->
+
+<!-- Завдання 5. Практична адаптація
+Використай будь-який свій попередній макет (з модуля 9 або домашньої роботи).
+
+Додай медіа-запити:
+
+Змінюй кількість колонок (Grid) або напрямок елементів (Flexbox).
+
+Змінюй розміри шрифтів та padding у залежності від ширини.
+
+Перевір адаптивність у DevTools. -->
+
+<!-- Завдання 5. Практична адаптація (Приклад, як адаптувати базовий макет)
+
+<div class="layout">
+  <header>Хедер</header>
+  <main>Контент</main>
+  <aside>Бокова панель</aside>
+  <footer>Футер</footer>
+</div>
+
+<style>
+  .layout {
+    display: grid;
+    grid-template-areas:
+      'header'
+      'main'
+      'aside'
+      'footer';
+    gap: 10px;
+  }
+
+  header {
+    grid-area: header;
+    background: #f99;
+    padding: 10px;
+  }
+  main {
+    grid-area: main;
+    background: #9f9;
+    padding: 10px;
+  }
+  aside {
+    grid-area: aside;
+    background: #99f;
+    padding: 10px;
+  }
+  footer {
+    grid-area: footer;
+    background: #999;
+    padding: 10px;
+  }
+
+  @media (min-width: 768px) {
+    .layout {
+      grid-template-columns: 2fr 1fr;
+      grid-template-areas:
+        'header header'
+        'main aside'
+        'footer footer';
+    }
+  }
+</style> -->
