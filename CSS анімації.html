@@ -1,0 +1,169 @@
+<!-- <style>
+  button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+  }
+  button:hover {
+    background-color: red;
+  }
+</style>
+
+<button>Натисни мене</button> -->
+
+<!-- При наведенні фон кнопки плавно змінюється зі швидкістю 0.3 секунди. -->
+<!-- <div class="box">Content</div>
+<style>
+  .box {
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+    transition: width 0.3s ease, background 0.5s ease-in-out;
+  }
+
+  .box:hover {
+    width: 200px;
+    background: #ff6347;
+  }
+</style> -->
+
+<!-- <div class="card-demo">Контент</div>
+
+<style>
+  .card-demo {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    transition: box-shadow 0.5s ease;
+  }
+
+  .card-demo:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+</style> -->
+
+<!-- Завдання 1
+Створи кнопку .btn3, яка при наведенні плавно:
+•	змінює колір фону
+•	змінює колір тексту
+•	плавно збільшується (20%) scale: 1.2; transform: scale(1.2);
+Усі зміни тривають 0.3 секунди.
+Відповідь -->
+
+<!-- <button class="btn3">Кнопка 3</button>
+
+<style>
+  .btn3 {
+    background-color: #444;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    transition: color 3s ease, background 3s ease, transform 3s ease;
+  }
+
+  .btn3:hover {
+    background-color: #ddd;
+    color: #333;
+    transform: scale(1.2);
+  }
+</style> -->
+
+<!-- Завдання 2
+Створи блок .box2 шириною 100px і висотою 100px.
+При наведенні плавно змінюй:
+•	ширину до 150px за 0.3 секунди
+•	затримка для зміни ширини — 0.2 секунди
+•	плавно змінюй висоту до 150px одразу без затримки -->
+
+<!-- <div class="box2"></div>
+
+<style>
+  .box2 {
+    width: 100px;
+    height: 100px;
+    background: #555;
+    transition: width 2s ease 1s, height 2s ease;
+  }
+
+  .box2:hover {
+    width: 150px;
+    height: 150px;
+  }
+</style> -->
+
+<!-- Завдання 3
+Створи блок .card2, у якого при наведенні плавно з’являється тінь та зсувається вгору протягом 0.4 секунди. -->
+<!-- transform: translateY(-10px); -->
+<!-- box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); -->
+
+<!-- <div class="card2">Контент</div>
+
+<style>
+  .card2 {
+    background: #eee;
+    padding: 20px;
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+  }
+
+  .card2:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transform: translate(10px, 10px);
+  }
+</style> -->
+
+<!-- Завдання 4
+Створи блок .text2, у якого при наведенні плавно зникає (opacity: 0) і змінює колір тексту з білого на чорний.
+Анімація триває 0.5 секунди, але зміна кольору тексту відбувається тільки через 0.3 секунди (затримка). -->
+<!-- <div class="text2">Текстовий блок</div>
+
+<style>
+  .text2 {
+    background: #222;
+    color: #fff;
+    padding: 10px;
+    transition: opacity 0.5s ease, color 0.5s ease 0.3s;
+  }
+
+  .text2:hover {
+    opacity: 0;
+    color: #000;
+  }
+</style> -->
+
+<!-- Завдання 5
+Створи картку .card3, у якої при наведенні плавно:
+•	змінюється тінь
+•	збільшується зображення всередині картки (збільшується img)
+•	анімація збільшення картинки (scale) триває довше (0.5 секунди), ніж зміна тіні (0.3 секунди).
+Відповідь -->
+
+<!-- <div class="card3">
+  <img src="https://via.placeholder.com/150" alt="" />
+  <p>Опис товару</p>
+</div>
+
+<style>
+  .card3 {
+    background: #f9f9f9;
+    padding: 10px;
+    transition: box-shadow 0.3s ease;
+    overflow: hidden;
+  }
+
+  .card3 img {
+    display: block;
+    width: 50%;
+    transition: transform 0.5s ease;
+  }
+
+  .card3:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .card3:hover img {
+    transform: scale(1.1);
+  }
+</style> -->
